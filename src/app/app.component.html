@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="form">
+    <label>COLOR CODE</label>
+    <input
+      type="text"
+      formControlName="TS_Color_Code"
+      class="form-control"
+      [value]="TS_Color_Code"
+      [colorPicker]="currentColor"
+      (colorPickerChange)="onColorPickerChange($event)"
+    />
+  </form>
+</div>
